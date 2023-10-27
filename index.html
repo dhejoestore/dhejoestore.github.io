@@ -40,8 +40,14 @@
           <h1 data-aos="zoom-in" data-aos-delay="0" data-aos-duration="2000">Dhea <span> &</span> Riki</h1>
 
           <p><font size="2" face="Verdana" color="white">Kepada Yth Bapak/Ibu/Saudara/i</font></p>
-<div class="wdp-name namatamu" style="width: auto !important;"><?php if( isset($_GET['to']) && $_GET['to'] !== '' ){ echo $_GET['to']; } else { echo 'Tamu Undangan'; } ?>
-</div>
+<script>
+const queryString = document.location.search;
+const urlParams = new URLSearchParams(queryString);
+const namatamu = urlParams.get('mengundang')
+
+document.write(namatamu);
+
+</script>
 
 		
           <button data-aos="fade-up" data-aos-delay="800" class="close"><i data-feather="mail" style="vertical-align: middle; "></i> Buka Undangan</button>
